@@ -1,89 +1,30 @@
 function Home() {
   return (
     <>
-        <div
-        style={{
-        backgroundColor: ' #f7a7cc',
-        display: "flex",
-        justifyContent: "center"
-    }}
-    >
-        <div
-        style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 'fr",
-            color: "white",
-            width: "100%",
-            maxWidth: "1280px",
-        }}
-    >
-        <div
-        style={{
-            display: "flex",
-            flexDirection: "column",
-            gap: "1rem",
-            alignItems: "center",
-            justifyContent: "center",
-            paddingTop: "1rem",
-            paddingBottom: "1rem"
-        }}
-    >
+      <div className="bg-pink-300 flex flex-col items-center text-white">
+        <div className="container grid grid-cols-2 text-white">
+          <div className="flex flex-col gap-4 items-center justify-center py-4">
+            <h2 className='text-6x1 font-bold'>Blog Pessoal</h2>
 
-        <h2
-        style={{
-            fontSize: "3rem",
-            fontWeight: "bold"
-        }}
-    >
-        Blog Pessoal 
-    </h2>
+            <p className='text-5x1'>Expresse aqui seus pensamentos e opiniões</p>
 
-    <p
-        style={{
-            fontSize: "1.25rem"
-        }}
-    >
-        Expresse aqui seus pensamentos e opiniões
-    </p>
+            <div className="flex justify-around gap-4">
+              <div className='rounded text-white border-white
+              border-solid border-2 py-2 px-4'>Nova Postagem</div>
+            </div>
+          </div>
 
-        <div
-            style={{
-                display: "flex",
-                justifyContent: "space-around",
-                gap: "1rem"
-            }}
-        >
-
-        <div
-            style={{
-                borderRadius: "0.5rem",
-                color: "white",
-                border: "2px solid white",
-                padding: "0.5rem 1rem"
-            }}
-        >
-            Nova Postagem
-        </div>
-       </div>
-     </div>
-
-        <div
-            style={{
-                display: "flex",
-                justifyContent: "center"
-            }}
-        >
+          <div className="flex justify-center">
             <img
-            src="https://ik.imagekit.io/wssant/Instagram%20post%20moodboard%20apresenta%C3%A7%C3%A3o%20gr%C3%A1fica%20viagem.png?updatedAt=1761151347864"
-            alt="Imagem Página Home"
-            style={{
-            }}
+              src="https://ik.imagekit.io/wssant/Captura%20de%20tela%202025-10-23%20195934.png?updatedAt=1761260594297"
+              alt="Imagem Página Home"
+              className='w-3/3'
             />
+          </div>
         </div>
-        </div>
-        </div>
-        </>
-  )
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
