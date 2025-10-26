@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <div className="bg-pink-300 flex flex-col items-center text-white">
+      <div className="bg-[#f7a7cc] flex flex-col items-center text-white">
         <div className="container grid grid-cols-2 text-white">
           <div className="flex flex-col gap-4 items-center justify-center py-4">
             <h2 className='text-6x1 font-bold'>Blog Pessoal</h2>
