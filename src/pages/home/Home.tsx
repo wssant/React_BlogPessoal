@@ -16,9 +16,9 @@ function Home() {
 
           <div className="flex justify-center">
             <img
-              src="https://ik.imagekit.io/wssant/Captura%20de%20tela%202025-10-23%20195934.png?updatedAt=1761260594297"
+              src="https://ik.imagekit.io/wssant/wwwwwwwww.png?updatedAt=1761308033335"
               alt="Imagem Página Home"
-              className='w-3/3'
+              className='w-2/3'
             />
           </div>
         </div>
