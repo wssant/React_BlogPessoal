@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState, type ChangeEvent, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
@@ -51,6 +50,7 @@ function Cadastro() {
         await cadastrarUsuario("/usuarios/cadastrar", usuario, setUsuario);
         alert("Usuário cadastrado com sucesso!");
       } catch (error) {
+        console.log(error)
         alert("Erro ao cadastrar o usuário!");
       }
     } else {

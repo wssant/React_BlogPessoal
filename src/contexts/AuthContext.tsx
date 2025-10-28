@@ -2,6 +2,7 @@ import { createContext, type ReactNode, useState } from "react"
 import { login } from "../services/Service"
 import type { UsuarioLogin } from "../models/UsuarioLogin"
 
+
 interface AuthContextProps {
   usuario: UsuarioLogin
   handleLogout(): void
@@ -13,7 +14,6 @@ interface AuthProviderProps {
   children: ReactNode
 }
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext({} as AuthContextProps)
 
 export function AuthProvider({ children }: AuthProviderProps) {
@@ -34,8 +34,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       await login('/usuarios/logar', usuarioLogin, setUsuario)
       alert("O Usuário foi autenticado com sucesso!")
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
+      console.log(error)
       alert("Os Dados do usuário estão inconsistentes!")
     }
     setIsLoading(false)
