@@ -24,9 +24,9 @@ function logout() {
           </Link>
           <div className="flex gap-4">
             Postagens
-            Temas
+            <Link to='/cadastrartema' className='hover:underline'>Cadastrar Tema</Link>
             Cadastrar
-            Tema
+            <Link to='/temas' className='hover:underline'>Temas</Link>
             Perfil
             <Link to='' onClick={logout} className='hover:underline'> Sair</Link>
           </div>

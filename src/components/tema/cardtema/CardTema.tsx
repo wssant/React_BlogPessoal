@@ -1,26 +1,28 @@
 import { Link } from "react-router-dom";
+import type Tema from "../../../models/Tema";
 
-function CardTema() {
+interface CardTemaProps{
+    tema: Tema
+}
+
+function CardTema({ tema }: CardTemaProps) {
   return (
-    <div className="border flex flex-col rounded-2x1 overflow-hidden justify-between">
-      <header className="py-2 px-6 bg-indifo-800 text-white font-bold text-2x1">
-        Tema
-      </header>
-      <p className="p-8 text-3x1 bg-slate-200 h-full">Descrição</p>
+    <div className="border- flex flex-col rounded-xl overflow-hidden justify-between">
+      <header className='py-2 px-6 bg-[#9999ff] text-white font-bold text-2x1 flex justify-center'>Tema</header>
+      <p className="p-8 text-3x1 bg-[#e6e6ff] text-white font-bold flex justify-center h-full">{tema.descricao}</p>
 
       <div className="flex">
         <Link
           to=""
-          className="w-full text-slate-100 bg-indigo-400 hover:bg-indigo-800
-        flex items-center justify-center py-2"
-        >
+          className="border rounded text-white bg-[#f7a7cc]
+                hover:bg-[#f7a7] w-1/2 py-2
+                flex justify-center">
           <button>Editar</button>
         </Link>
 
         <Link
           to=""
-          className="text-slate-100 bg-red-400 hover:bg-red-800
-        flex items-center justify-center"
+          className="border-2 rounded text-white bg-red-500 hover:bg-red-400 w-1/2 py-2 flex justify-center"
         >
           <button>Deletar</button>
         </Link>
