@@ -82,7 +82,7 @@ function login(e: FormEvent<HTMLFormElement>) {
             </Link>
           </p>
         </form>
-        <div className="bg-[url('https://ik.imagekit.io/wssant/CLICK%20HERE.png?updatedAt=1761682563529')] lg:block hidden bg-no-repeat w-full min-h-screen bg-cover bg-center">
+        <div className="bg-[url('https://ik.imagekit.io/wssant/id.png?updatedAt=1761764207366')] lg:block hidden bg-no-repeat w-full min-h-screen bg-contain bg-center">
         </div>
       </div>
     </>
